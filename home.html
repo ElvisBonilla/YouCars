@@ -194,7 +194,7 @@
                                                                         <strong class="fontNeuron elemenBlock dropdownTitle text-uppercase hidden-xs">Otras Paginas</strong>
                                                                         <ul class="list-unstyled dropdownColList">
                                                                             <li><a href="user-profile.html">Perfil de usuario</a></li>
-                                                                            <li><a href="my-properties.html">Mis propiedades/a></li>
+                                                                            <li><a href="my-properties.html">Mis propiedades</a></li>
                                                                             <li><a href="favourite-properties.html">Propiedades favoritas</a></li>
                                                                             <li><a href="membership.html">Membrecia</a></li>
                                                                             <li><a href="properties-faqs.html">Preguntas Frecuentes</a></li>
@@ -280,9 +280,9 @@
                                                     <span class="icn"><i class="fi flaticon-pin-1"></i></span>
                                                     <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
                                                 </address>
-                                                <h2 class="fontNeuron">$ 136,636 <strong class="fwNormal textUnit">/ monthly</strong></h2>
+                                                <h2 class="fontNeuron">$ 136,636*</h2>
                                                 <div class="btnsWrap">
-                                                    <a href="#" class="btn btn-success btnSmall">En venta</a>
+                                                    <a href="#" class="btn btn-success btnSmall">Nuevo</a>
                                                     <a href="#" class="btn btn-info btnSmall">Destacados</a>
                                                 </div>
                                             </div>
@@ -304,9 +304,9 @@
                                                     <span class="icn"><i class="fi flaticon-pin-1"></i></span>
                                                     <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
                                                 </address>
-                                                <h2 class="fontNeuron">$ 66,500 <strong class="fwNormal textUnit">/ monthly</strong></h2>
+                                                <h2 class="fontNeuron">$ 66,500*</h2>
                                                 <div class="btnsWrap">
-                                                    <a href="#" class="btn btn-success btnSmall">En venta</a>
+                                                    <a href="#" class="btn btn-success btnSmall">Nuevo</a>
                                                     <a href="#" class="btn btn-info btnSmall">Destacados</a>
                                                 </div>
                                             </div>
@@ -328,9 +328,9 @@
                                                     <span class="icn"><i class="fi flaticon-pin-1"></i></span>
                                                     <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
                                                 </address>
-                                                <h2 class="fontNeuron">$ 62,900 <strong class="fwNormal textUnit">/ monthly</strong></h2>
+                                                <h2 class="fontNeuron">$ 62,900*</h2>
                                                 <div class="btnsWrap">
-                                                    <a href="#" class="btn btn-success btnSmall">En venta</a>
+                                                    <a href="#" class="btn btn-success btnSmall">Nuevo</a>
                                                     <a href="#" class="btn btn-info btnSmall">Destacados</a>
                                                 </div>
                                             </div>
@@ -453,7 +453,6 @@
                                             <option value="Pesado">Maquinaria Pesada</option>
                                             <option value="Taxis">Taxis</option>
                                             <option value="Otros">Otros</option>
-                                            <option value="otro">Otros</option>
                                         </select>
                                     </div>
                                 </div>
@@ -585,11 +584,10 @@
                                 <div class="col-xs-12 col-sm-6 col-md-3">
                                     <div class="form-group">
                                         <select data-placeholder="Parking" class="chosen-select">
-                                            <option value="1">Parking</option>
-                                            <option value="1">Parking</option>
-                                            <option value="1">Parking</option>
-                                            <option value="1">Parking</option>
-                                            <option value="1">Parking</option>
+                                            <option disabled selected>Estado</option>
+                                            <option value="Ambos">Autos nuevos y usados</option>
+                                            <option value="Nuevos">Carros Nuevos</option>
+                                            <option value="Usado">Carros Usados</option>
                                         </select>
                                     </div>
                                 </div>
@@ -601,11 +599,721 @@
                                 <div class="col-xs-12 order3">
                                 </div>
                                 <div class="col-xs-12 col-sm-offset-6 col-sm-3 order2">
-                                    <button type="button" class="btn btnSecondary text-uppercase fontNeuron pull-right">SEARCH</button>
+                                    <button type="button" class="btn btnSecondary text-uppercase fontNeuron pull-right">BUSCAR</button>
                                 </div>
                             </div>
                         </div>
                     </form>
+                    <!-- latestPostsBlock -->
+                    <section class="latestPostsBlock container">
+                        <!-- rowHead -->
+                        <header class="row rowHead">
+                            <div class="col-xs-12 col-sm-5">
+                                <h1 class="fontNeuron blockH text-uppercase"><span class="bdrBottom">ULTIMOS</span> <span class="textSecondary">AUTOMOVILES</span></h1>
+                            </div>
+                            <div class="col-xs-12 col-sm-7">
+                                <!-- postsFiltersList -->
+                                <ul class="list-unstyled postsFiltersList text-capitalize text-center isoFiltersList">
+                                    <li class="active"><a href="#">Todos</a></li>
+                                    <li><a href="#" data-filter=".rent">Usado</a></li>
+                                    <li><a href="#" data-filter=".sale">Nuevo</a></li>
+                                </ul>
+                            </div>
+                        </header>
+                        <!-- isoContentHolder -->
+                        <div class="isoContentHolder">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col isoCol sale">
+                                    <!-- postColumn -->
+                                    <article class="postColumn hasOver bgWhite">
+                                        <div class="aligncenter">
+                                            <!-- postColumnImageSlider -->
+                                            <div class="slick-carousel slickSlider postColumnImageSlider">
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/car/dealer/0eb82812947cae1f2305df88696d042c.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image 1">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/car/dealer/a159b06fb0824979984d8e2ef3803462.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image 2">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/car/dealer/dad4892b29fdba3f861077ede03e8f74.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image 3">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- postHoverLinskList -->
+                                            <ul class="list-unstyled postHoverLinskList">
+                                                <li><a href="#"><i class="fi flaticon-repeat"></i></a></li>
+                                                <li class="hasOver">
+                                                    <a href="#"><i class="fi flaticon-share"></i></a>
+                                                    <!-- postColumnSocial -->
+                                                    <ul class="list-unstyled socialNetworks postColumnSocial">
+                                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- linkToFavourite -->
+                                            <a href="#" class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">2017 Mazda CX-5</a></h2>
+                                        <address>
+                                            <span class="icn"><i class="fi flaticon-pin-1"></i></span>
+                                            <p>The Village, Jersey City, NJ 07302, USA </p>
+                                        </address>
+                                        <span class="btn btnSmall btn-success text-capitalize">Nuevo</span>
+                                        <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 34,777*</span></h3>
+                                        <!-- postColumnFoot -->
+                                        <footer class="postColumnFoot">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Kilometros</strong>
+                                                    <strong class="fwNormal elemenBlock">63,932 km</strong>
+                                                </li>
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Puertas</strong>
+                                                    <strong class="fwNormal elemenBlock">5</strong>
+                                                </li>
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Transmisión</strong>
+                                                    <strong class="fwNormal elemenBlock">Automatico</strong>
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </article>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col isoCol rent">
+                                    <!-- postColumn -->
+                                    <article class="postColumn hasOver bgWhite">
+                                        <div class="aligncenter">
+                                            <!-- postColumnImageSlider -->
+                                            <div class="slick-carousel slickSlider postColumnImageSlider">
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/car/dealer/2m1dnto9d1ii0w4re7l4rpxlo.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/car/dealer/6nblb4b5maoskxoxo1v50u1o9.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/car/dealer/7t7gq7b802hgtm2z9zq3rpgbr.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- postHoverLinskList -->
+                                            <ul class="list-unstyled postHoverLinskList">
+                                                <li><a href="#"><i class="fi flaticon-repeat"></i></a></li>
+                                                <li class="hasOver">
+                                                    <a href="#"><i class="fi flaticon-share"></i></a>
+                                                    <!-- postColumnSocial -->
+                                                    <ul class="list-unstyled socialNetworks postColumnSocial">
+                                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- linkToFavourite -->
+                                            <a href="#" class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">2016 Toyota Landcruiser Prado</a></h2>
+                                        <address>
+                                            <span class="icn"><i class="fi flaticon-pin-1"></i></span>
+                                            <p>London, United Kingdom</p>
+                                        </address>
+                                        <span class="btn btnSmall btn-info text-capitalize">Usado</span>
+                                        <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 49,999*</span></h3>
+                                        <!-- postColumnFoot -->
+                                        <footer class="postColumnFoot">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Kilometros</strong>
+                                                    <strong class="fwNormal elemenBlock">115,155 km</strong>
+                                                </li>
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Puertas</strong>
+                                                    <strong class="fwNormal elemenBlock">5</strong>
+                                                </li>
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Transmisión</strong>
+                                                    <strong class="fwNormal elemenBlock">Automatico</strong>
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </article>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col isoCol sale">
+                                    <!-- postColumn -->
+                                    <article class="postColumn hasOver bgWhite">
+                                        <div class="aligncenter">
+                                            <!-- postColumnImageSlider -->
+                                            <div class="slick-carousel slickSlider postColumnImageSlider">
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/cars/dealer/ep28si0q79c3jfzrg8hd6ilj5.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/cars/dealer/7tnk5pf47s537cm0mw63cxiee.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/cars/dealer/bpe5ib81ef3olakvg12xg0jt4.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- postHoverLinskList -->
+                                            <ul class="list-unstyled postHoverLinskList">
+                                                <li><a href="#"><i class="fi flaticon-repeat"></i></a></li>
+                                                <li class="hasOver">
+                                                    <a href="#"><i class="fi flaticon-share"></i></a>
+                                                    <!-- postColumnSocial -->
+                                                    <ul class="list-unstyled socialNetworks postColumnSocial">
+                                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- linkToFavourite -->
+                                            <a href="#" class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">2020 Mazda BT-50</a></h2>
+                                        <address>
+                                            <span class="icn"><i class="fi flaticon-pin-1"></i></span>
+                                            <p>778 Country St. Panama City, FL</p>
+                                        </address>
+                                        <span class="btn btnSmall btn-success text-capitalize">Nuevo</span>
+                                        <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 59,990</span></h3>
+                                        <!-- postColumnFoot -->
+                                        <footer class="postColumnFoot">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Kilometros</strong>
+                                                    <strong class="fwNormal elemenBlock">9 km</strong>
+                                                </li>
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Puertas</strong>
+                                                    <strong class="fwNormal elemenBlock">4</strong>
+                                                </li>
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Transmisión</strong>
+                                                    <strong class="fwNormal elemenBlock">Automatico</strong>
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </article>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col isoCol rent">
+                                    <!-- postColumn -->
+                                    <article class="postColumn hasOver bgWhite">
+                                        <div class="aligncenter">
+                                            <!-- postColumnImageSlider -->
+                                            <div class="slick-carousel slickSlider postColumnImageSlider">
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/cars/dealer/dhsaw2llfjn9ldc6075nnzvms.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/cars/dealer/h3fks575qe7yah7cl6sinbdw.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/cars/dealer/c06jv8s7oos2c6jh271idagq3.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- postHoverLinskList -->
+                                            <ul class="list-unstyled postHoverLinskList">
+                                                <li><a href="#"><i class="fi flaticon-repeat"></i></a></li>
+                                                <li class="hasOver">
+                                                    <a href="#"><i class="fi flaticon-share"></i></a>
+                                                    <!-- postColumnSocial -->
+                                                    <ul class="list-unstyled socialNetworks postColumnSocial">
+                                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- linkToFavourite -->
+                                            <a href="#" class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">2018 Toyota RAV4</a></h2>
+                                        <address>
+                                            <span class="icn"><i class="fi flaticon-pin-1"></i></span>
+                                            <p>The Village, Jersey City, NJ 07302, USA </p>
+                                        </address>
+                                        <span class="btn btnSmall btn-info text-capitalize">Usado</span>
+                                        <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 30,000</span></h3>
+                                        <!-- postColumnFoot -->
+                                        <footer class="postColumnFoot">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Kilometros</strong>
+                                                    <strong class="fwNormal elemenBlock">84,080 km</strong>
+                                                </li>
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Puertas</strong>
+                                                    <strong class="fwNormal elemenBlock">5</strong>
+                                                </li>
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Transmisión</strong>
+                                                    <strong class="fwNormal elemenBlock">Automatico</strong>
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </article>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col isoCol sale">
+                                    <!-- postColumn -->
+                                    <article class="postColumn hasOver bgWhite" data-label="featured">
+                                        <div class="aligncenter">
+                                            <!-- postColumnImageSlider -->
+                                            <div class="slick-carousel slickSlider postColumnImageSlider">
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/car/cil/pw4up1wqfu8tr12uo2nlavl3b.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/car/cil/6znpi31sf6donbedit48lrss1.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/car/cil/6a5zrnwiet8oqmd74cj8f4u62.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- postHoverLinskList -->
+                                            <ul class="list-unstyled postHoverLinskList">
+                                                <li><a href="#"><i class="fi flaticon-repeat"></i></a></li>
+                                                <li class="hasOver">
+                                                    <a href="#"><i class="fi flaticon-share"></i></a>
+                                                    <!-- postColumnSocial -->
+                                                    <ul class="list-unstyled socialNetworks postColumnSocial">
+                                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- linkToFavourite -->
+                                            <a href="#" class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">2020 Hyundai i30</a></h2>
+                                        <address>
+                                            <span class="icn"><i class="fi flaticon-pin-1"></i></span>
+                                            <p>London, United Kingdom </p>
+                                        </address>
+                                        <span class="btn btnSmall btn-success text-capitalize">Nuevo</span>
+                                        <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 25,990*</span></h3>
+                                        <!-- postColumnFoot -->
+                                        <footer class="postColumnFoot">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Kilometros</strong>
+                                                    <strong class="fwNormal elemenBlock">13 km</strong>
+                                                </li>
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Puertas</strong>
+                                                    <strong class="fwNormal elemenBlock">5</strong>
+                                                </li>
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Transmisión</strong>
+                                                    <strong class="fwNormal elemenBlock">Automatico</strong>
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </article>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col isoCol rent">
+                                    <!-- postColumn -->
+                                    <article class="postColumn hasOver bgWhite">
+                                        <div class="aligncenter">
+                                            <!-- postColumnImageSlider -->
+                                            <div class="slick-carousel slickSlider postColumnImageSlider">
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/car/dealer/8c04f04335ee25757253d516995523da.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/car/dealer/7nvj2eewipwq6w3zj3g8488y8.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="imgHolder">
+                                                        <a href="properties-single1.html">
+                                                            <img src="https://carsales.pxcrush.net/carsales/car/dealer/1a664d3b77f7335071888d0dd92bcd26.jpg?pxc_method=fit&pxc_size=1795%2c1195" alt="image description">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- postHoverLinskList -->
+                                            <ul class="list-unstyled postHoverLinskList">
+                                                <li><a href="#"><i class="fi flaticon-repeat"></i></a></li>
+                                                <li class="hasOver">
+                                                    <a href="#"><i class="fi flaticon-share"></i></a>
+                                                    <!-- postColumnSocial -->
+                                                    <ul class="list-unstyled socialNetworks postColumnSocial">
+                                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- linkToFavourite -->
+                                            <a href="#" class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">2017 Volkswagen Golf</a></h2>
+                                        <address>
+                                            <span class="icn"><i class="fi flaticon-pin-1"></i></span>
+                                            <p>778 Country St. Panama City, FL</p>
+                                        </address>
+                                        <span class="btn btnSmall btn-info text-capitalize">Usado</span>
+                                        <h3 class="fontNeuron fwSemi"><span class="textSecondary">$18,990*</span></h3>
+                                        <!-- postColumnFoot -->
+                                        <footer class="postColumnFoot">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Kilometros</strong>
+                                                    <strong class="fwNormal elemenBlock">34,551 km</strong>
+                                                </li>
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Puertas</strong>
+                                                    <strong class="fwNormal elemenBlock">5</strong>
+                                                </li>
+                                                <li>
+                                                    <strong class="fwNormal elemenBlock text-primary">Transmisión</strong>
+                                                    <strong class="fwNormal elemenBlock">Automatico</strong>
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-center btnHolder">
+                            <a href="properties-detial.html" class="btn btn-primary btnPrimaryOutline text-capitalize fontNeuron">Mostrar más autos</a>
+                        </div>
+                    </section>
+                    <!-- mostPostsBlock -->
+                    <section class="mostPostsBlock bgWhite">
+                        <div class="container">
+                            <h1 class="fontNeuron blockH text-uppercase"><span class="textSecondary">AUTOMOVILES</span> <span class="bdrBottom">MÁS POPULARES</span> </h1>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <!-- visualPostColumn -->
+                                    <a href="properties-detial.html" class="visualPostColumn hasOver elemenBlock text-center type01 textWhite">
+                                        <span class="bgCover elemenBlock" style="background-image: url(https://carsales.pxcrush.net/carsales//cars/dealer/7rgq0oa7w30z7uka4vafjzt3f.jpg?pxc_method=gravityfill&pxc_bgtype=self&pxc_size=720,480);"></span>
+                                        <div class="captionWrap">
+                                            <h2 class="fontNeuron">New York</h2>
+                                            <h3 class="fontNeuron fwNormal">512 Automoviles</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <!-- visualPostColumn -->
+                                    <a href="properties-detial.html" class="visualPostColumn hasOver elemenBlock text-center type02 textWhite">
+                                        <span class="bgCover elemenBlock" style="background-image: url(https://carsales.pxcrush.net/carsales//car/dealer/axsvs07b8u9q97yda1se81trk.jpg?pxc_method=gravityfill&pxc_bgtype=self&pxc_size=720,480);"></span>
+                                        <div class="captionWrap">
+                                            <h2 class="fontNeuron">Chicago</h2>
+                                            <h3 class="fontNeuron fwNormal">497 Automoviles</h3>
+                                        </div>
+                                    </a>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <a href="#" class="visualPostColumn hasOver elemenBlock text-center type03 textWhite">
+                                                <span class="bgCover elemenBlock" style="background-image: url(https://carsales.pxcrush.net/carsales//cars/dealer/61ddbgygjimzxuf82s0eo0o9f.jpg?pxc_method=gravityfill&pxc_bgtype=self&pxc_size=720,480);"></span>
+                                                <div class="captionWrap">
+                                                    <h2 class="fontNeuron">Los Angeles</h2>
+                                                    <h3 class="fontNeuron fwNormal">280 Automoviles</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <a href="properties-detial.html" class="visualPostColumn hasOver elemenBlock text-center type03 textWhite">
+                                                <span class="bgCover elemenBlock" style="background-image: url(https://carsales.pxcrush.net/carsales//cars/private/3xywdech9ct28ecxrmwiv0t8z.jpg?pxc_method=gravityfill&pxc_bgtype=self&pxc_size=720,480);"></span>
+                                                <div class="captionWrap">
+                                                    <h2 class="fontNeuron">San Francisco</h2>
+                                                    <h3 class="fontNeuron fwNormal">144 Automoviles</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- ourAgentBlock -->
+                    <section class="bgWhite ourAgentBlock">
+                        <div class="container">
+                            <h1 class="fontNeuron blockH text-uppercase"><span class="bdrBottom">Nuestros</span> <span class="textSecondary">Agentes</span></h1>
+                            <div class="row">
+                                <!-- profilesSlider -->
+                                <div class="four-slider slickSlider profilesSlider">
+                                    <div>
+                                        <div class="col-xs-12">
+                                            <!-- profileColumn -->
+                                            <article class="profileColumn hasOver">
+                                                <div class="aligncenter">
+                                                    <a href="agent-detail.html">
+                                                        <img src="https://randomuser.me/api/portraits/women/77.jpg" alt="Gladys Chapman Sales Executive">
+                                                    </a>
+                                                </div>
+                                                <div class="textWrap">
+                                                    <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Gladys Chapman</a></h2>
+                                                    <h3 class="fwNormal text-capitalize">Ejecutiva de ventas</h3>
+                                                    <div class="collapseWrap">
+                                                        <!-- profileColumnSocial -->
+                                                        <ul class="list-unstyled socialNetworks profileColumnSocial">
+                                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-xs-12">
+                                            <!-- profileColumn -->
+                                            <article class="profileColumn hasOver">
+                                                <div class="aligncenter">
+                                                    <a href="agent-detail.html">
+                                                        <img src="https://randomuser.me/api/portraits/men/92.jpg" alt="Alex Perez Real Estate Broker">
+                                                    </a>
+                                                </div>
+                                                <div class="textWrap">
+                                                    <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Alex Perez</a></h2>
+                                                    <h3 class="fwNormal text-capitalize">Agente de bienes raícesr</h3>
+                                                    <div class="collapseWrap">
+                                                        <!-- profileColumnSocial -->
+                                                        <ul class="list-unstyled socialNetworks profileColumnSocial">
+                                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-xs-12">
+                                            <!-- profileColumn -->
+                                            <article class="profileColumn hasOver">
+                                                <div class="aligncenter">
+                                                    <a href="agent-detail.html">
+                                                        <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Lauren Reynolds Selling Agent">
+                                                    </a>
+                                                </div>
+                                                <div class="textWrap">
+                                                    <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Lauren Reynolds</a></h2>
+                                                    <h3 class="fwNormal text-capitalize">Agente de ventas</h3>
+                                                    <div class="collapseWrap">
+                                                        <!-- profileColumnSocial -->
+                                                        <ul class="list-unstyled socialNetworks profileColumnSocial">
+                                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-xs-12">
+                                            <!-- profileColumn -->
+                                            <article class="profileColumn hasOver">
+                                                <div class="aligncenter">
+                                                    <a href="agent-detail.html">
+                                                        <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Madeleine Zhang Buying Agent">
+                                                    </a>
+                                                </div>
+                                                <div class="textWrap">
+                                                    <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Madeleine Zhang</a></h2>
+                                                    <h3 class="fwNormal text-capitalize">Agente de compras</h3>
+                                                    <div class="collapseWrap">
+                                                        <!-- profileColumnSocial -->
+                                                        <ul class="list-unstyled socialNetworks profileColumnSocial">
+                                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-xs-12">
+                                            <!-- profileColumn -->
+                                            <article class="profileColumn hasOver">
+                                                <div class="aligncenter">
+                                                    <a href="agent-detail.html">
+                                                        <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Addison Harris Sales Executive">
+                                                    </a>
+                                                </div>
+                                                <div class="textWrap">
+                                                    <h2 class="fontNeuron text-capitalize"><a href="agent-detail.html">Addison Harris</a></h2>
+                                                    <h3 class="fwNormal text-capitalize">Ejecutiva de ventas</h3>
+                                                    <div class="collapseWrap">
+                                                        <!-- profileColumnSocial -->
+                                                        <ul class="list-unstyled socialNetworks profileColumnSocial">
+                                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-xs-12">
+                                            <!-- profileColumn -->
+                                            <article class="profileColumn hasOver">
+                                                <div class="aligncenter">
+                                                    <a href="#">
+                                                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Yann Marin Real Estate Broker">
+                                                    </a>
+                                                </div>
+                                                <div class="textWrap">
+                                                    <h2 class="fontNeuron text-capitalize"><a href="agent.html">Yann Marin</a></h2>
+                                                    <h3 class="fwNormal text-capitalize">Agente de bienes raíces</h3>
+                                                    <div class="collapseWrap">
+                                                        <!-- profileColumnSocial -->
+                                                        <ul class="list-unstyled socialNetworks profileColumnSocial">
+                                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-xs-12">
+                                            <!-- profileColumn -->
+                                            <article class="profileColumn hasOver">
+                                                <div class="aligncenter">
+                                                    <a href="#">
+                                                        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Amador Teixeira Selling Agent">
+                                                    </a>
+                                                </div>
+                                                <div class="textWrap">
+                                                    <h2 class="fontNeuron text-capitalize"><a href="agent.html">Amador Teixeira</a></h2>
+                                                    <h3 class="fwNormal text-capitalize">Agente de ventast</h3>
+                                                    <div class="collapseWrap">
+                                                        <!-- profileColumnSocial -->
+                                                        <ul class="list-unstyled socialNetworks profileColumnSocial">
+                                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-xs-12">
+                                            <!-- profileColumn -->
+                                            <article class="profileColumn hasOver">
+                                                <div class="aligncenter">
+                                                    <a href="#">
+                                                        <img src="https://randomuser.me/api/portraits/men/79.jpg" alt="Nathan Clarke Buying Agent">
+                                                    </a>
+                                                </div>
+                                                <div class="textWrap">
+                                                    <h2 class="fontNeuron text-capitalize"><a href="agent.html">Nathan Clarke</a></h2>
+                                                    <h3 class="fwNormal text-capitalize">Agente de compras</h3>
+                                                    <div class="collapseWrap">
+                                                        <!-- profileColumnSocial -->
+                                                        <ul class="list-unstyled socialNetworks profileColumnSocial">
+                                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
                 </main>
             </div>
