@@ -5830,7 +5830,8 @@ h6 a:active,
 /* btnDark styles */
 
 .btnDark {
-    background-color: #114a82;
+    background-color: #485ce2;
+    ;
     border-color: #114a82;
     color: #fff;
 }
@@ -6181,7 +6182,7 @@ h6 a:active,
     -webkit-transform-origin: 50% 100% 0;
     -ms-transform-origin: 50% 100% 0;
     transform-origin: 50% 100% 0;
-    background-color: #13293d;
+    background-color: #C5EBFA;
     border-color: transparent;
 }
 
